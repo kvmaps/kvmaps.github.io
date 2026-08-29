@@ -1,0 +1,54 @@
+.policy-content {
+  max-width: 64rem;
+}
+
+.policy-content p,
+.policy-content li {
+  line-height: 1.65;
+}
+
+.last-updated {
+  color: #606b78;
+  font-size: 0.95rem;
+}
+
+.app-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 0.65rem 1.5rem;
+  margin: 1.25rem 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.app-list li {
+  break-inside: avoid;
+  border-left: 3px solid #159957;
+  padding-left: 0.75rem;
+}
+
+.app-list strong,
+.app-list code {
+  display: block;
+}
+
+.app-list code {
+  margin-top: 0.15rem;
+  overflow-wrap: anywhere;
+  color: #606b78;
+  font-size: 0.78rem;
+}
+
+.policy-content section {
+  scroll-margin-top: 1rem;
+}
+
+.policy-content a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .app-list {
+    grid-template-columns: 1fr;
+  }
+}
